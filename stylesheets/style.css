@@ -120,7 +120,7 @@ header .buy {
   align-self: start;
   color: #F6B716;
 }
-.about .text-container .text {
+.about .text-container .text-title .text {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -129,4 +129,12 @@ header .buy {
 img {
   bottom: 6rem;
   position: relative;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
 }
