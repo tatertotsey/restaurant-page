@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Hachi+Maru+Pop&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,500&family=Comfortaa&family=Hachi+Maru+Pop&family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191F2C;
+  background-image: url("../assets/bg-items/bg-texture.png");
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  font-family: "Bodoni Moda", serif;
+  color: #FFFFFF;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.462745098);
+}
+header button {
+  all: unset;
+}
+header button:hover {
+  color: #F6B716;
+}
+header .rest-name {
+  font-size: 2rem;
+  padding-left: 5rem;
+}
+header .nav-container {
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+header .buy {
+  position: relative;
+  top: 95px;
+  padding-right: 18rem;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+}
+#content .bg-item-lettuce {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+#content .bg-item-parsley {
+  position: absolute;
+  top: 35vh;
+  left: -20px;
+}
+#content .bg-item-garlic {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#content .bg-item-beans {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#content .bg-item-tomato {
+  position: absolute;
+  bottom: 40vh;
+  right: 70px;
+}
+#content .bg-item-carolina {
+  position: absolute;
+  left: 18rem;
+  top: 9rem;
+}
+#content .pizzacontainer {
+  display: flex;
+  justify-content: center;
+}
+#content .pizzacontainer .dough {
+  position: absolute;
+  bottom: 0;
+  transform: translate(12px, 0);
+}
+#content .pizzacontainer .selection {
+  position: absolute;
+  bottom: 0;
+}
+
+.about {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.about .text-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  flex-flow: column wrap;
+  width: 45%;
+  height: 60%;
+}
+.about .text-container .text-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 5rem;
+  align-self: start;
+  color: #F6B716;
+}
+.about .text-container .text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+img {
+  bottom: 6rem;
+  position: relative;
+}

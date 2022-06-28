@@ -1,0 +1,33 @@
+@use 'variables' as *
+
+header
+    font-family: $page-title
+    color: $text
+    padding: 2rem
+    @include make-center
+    flex-direction: row
+    justify-content: space-between
+    background: rgba(0,0,0,0.3)
+    box-shadow: 0 1px 10px #00000076
+
+    button
+        all: unset
+
+        &:hover
+            color: $btn
+
+    .rest-name
+        font-size: 2rem
+        padding-left: 5rem
+
+    .nav-container
+        font-size: 1.2rem
+        font-family: $main-text
+        @include make-center
+        flex-direction: row
+        gap: 3rem
+
+    .buy
+        position: relative
+        top: 95px
+        padding-right: 18rem
