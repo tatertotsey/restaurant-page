@@ -5,44 +5,70 @@
     height: 100vh
 
     .bg-item-lettuce
+        opacity: 50%
         position: absolute
         top: -10px
         right: 0px
 
     .bg-item-parsley
+        opacity: 50%
+
         position: absolute
         top: 35vh
         left: -20px
 
     .bg-item-garlic
+        opacity: 50%
+
         position: absolute
         bottom: 0
         left: 0
 
     .bg-item-beans
+        opacity: 50%
+
         position: absolute
         bottom: 0
         right: 0
 
     .bg-item-tomato
+        opacity: 50%
+
         position: absolute
         bottom: 40vh
         right: 70px
 
     .bg-item-carolina
+        opacity: 50%
         position: absolute
         left: 18rem
         top: 9rem
 
-    .pizzacontainer
-        display: flex
-        justify-content: center
+#home
 
-        .dough
-            position: absolute
-            bottom: 0
-            transform: translate(12px ,0)
+    .text-container
+        @include make-center
+        flex-direction: column
+        padding: 2.5rem
+        margin: 3rem 10rem 2rem
+        background: #00000053
+        border-radius: 5px
+        height: 75vh
 
-        .selection
-            position: absolute
-            bottom: 0
+        .text-title
+            font-family: $page-title
+            font-size: 5rem
+            color: $btn
+
+        .text
+            text-align: center
+            font-family: $main-text
+            font-size: 1.5rem
+            line-height: 1.5rem
+            color: $text
+            white-space: pre
+            margin-bottom: 2rem
+
+        .pizzaimg
+            width: 40%
+            height: 50%

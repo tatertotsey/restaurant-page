@@ -6,11 +6,26 @@ function home() {
   const carolina = document.createElement("img");
   const beans = document.createElement("img");
 
-  const pizzacontainer = document.createElement("div");
-  const dough = document.createElement("img");
-  const selection = document.createElement("img");
   const homecontainer = document.createElement("div");
   const tabContent = document.createElement("div");
+
+  const textContainer = document.createElement("div");
+  const textTitle = document.createElement("p");
+  const text = document.createElement("p");
+
+  const pizzaimg = document.createElement("img");
+
+  pizzaimg.classList = "pizzaimg";
+  pizzaimg.src = "./assets/pizza3.jpg";
+
+  textContainer.append(textTitle, text, pizzaimg);
+  textContainer.classList = "text-container";
+
+  textTitle.classList = "text-title";
+  textTitle.textContent = "Welcome to Santorinis";
+
+  text.classList = "text";
+  text.textContent = " We brought Italy to you!\r\n\r\n Come visit us!";
 
   lettuce.classList = "bg-item-lettuce";
   lettuce.src = "./assets/bg-items/bg-lettuce.png";
@@ -30,28 +45,17 @@ function home() {
   beans.classList = "bg-item-beans";
   beans.src = "./assets/bg-items/bg-beans.png";
 
-
-
-  pizzacontainer.classList = "pizzacontainer";
-  pizzacontainer.append(dough, selection);
-
-  dough.classList = "dough";
-  dough.src = "./assets/pizza-structure/dough.png";
-
-  selection.classList = "selection";
-  selection.src = "./assets/pizza-structure/selection.png";
-
   homecontainer.id = "home";
   homecontainer.classList = "active";
   homecontainer.dataset.tabContent = "";
   homecontainer.append(
-    lettuce,
-    parsley,
-    tomato,
-    garlic,
-    carolina,
-    beans,
-    pizzacontainer
+    // lettuce,
+    // parsley,
+    // tomato,
+    // garlic,
+    // carolina,
+    // beans,
+    textContainer
   );
 
   tabContent.classList = "tab-content";
