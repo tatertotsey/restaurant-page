@@ -1,9 +1,17 @@
 import loadHeader from "./header.js";
-import loadBgImages from "./background.js";
+import loadHome from "./home.js";
+import loadAbout from "./about.js";
+import loadMenu from "./menu.js";
+import loadContact from "./contact.js";
+import loadPizza from "./pizza.js";
 
 function firstLoad() {
   loadHeader();
-  loadBgImages();
+  loadHome();
+  loadAbout();
+  loadMenu();
+  loadContact();
+  loadPizza();
 }
 
 export default firstLoad;

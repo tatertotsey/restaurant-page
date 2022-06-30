@@ -1,0 +1,31 @@
+@use 'variables' as *
+
+#menu
+
+    .menu-title
+        font-family: $page-title
+        font-size: 5rem
+        color: $btn
+        margin: 1rem 5rem 3rem 8rem
+
+    .wrapper
+        @include make-center
+        flex-flow: row wrap
+        padding-bottom: 4rem
+        gap: 3.5rem
+
+        .menu-item
+            @include make-center
+            flex-direction: column
+            height: 360px
+            width: 400px
+            color: $text
+            font-family: $main-text
+            line-height: 1.5rem
+            background: #00000053
+            border-radius: 5px
+            padding: 4rem
+            border: 1px dashed $btn
+
+            p
+                font-size: 0.8rem

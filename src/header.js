@@ -1,7 +1,7 @@
 function createHeader() {
   const header = document.createElement("header");
-  const restname = document.createElement("div");
-  const navContainer = document.createElement("ul");
+  const restname = document.createElement("h1");
+  const navContainer = document.createElement("div");
 
   const home = document.createElement("button");
   const about = document.createElement("button");
@@ -16,23 +16,19 @@ function createHeader() {
   navContainer.classList = "nav-container";
 
   home.classList = "nav-item";
-  home.dataset.tabTarget = "home-content";
-  home.id = "home";
+  home.dataset.tabTarget = "#home";
   home.textContent = "Home";
 
   about.classList = "nav-item";
-  about.dataset.tabTarget = "about-content";
-  about.id = "about";
+  about.dataset.tabTarget = "#about";
   about.textContent = "About Us";
 
   menu.classList = "nav-item";
-  //menu.dataset.tabTarget = 'menu-content'
-  menu.id = "menu";
+  menu.dataset.tabTarget = "#menu";
   menu.textContent = "Our Menu";
 
   contact.classList = "nav-item";
-  //contact.dataset.tabTarget = 'contact-content'
-  contact.id = "contact";
+  contact.dataset.tabTarget = "#contact";
   contact.textContent = "Contact Us";
 
   buy.classList = "buy";
