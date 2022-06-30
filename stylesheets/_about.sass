@@ -1,16 +1,18 @@
 @use 'variables' as *
 
-.about
-    color: $text
-    display: flex
-    flex-direction: row
-    justify-content: space-evenly
+#about
 
     .text-container
+        color: $text
         @include left-block
-        flex-flow: column wrap
+        margin: 2rem 5rem
+        flex-direction: column
         width: 45%
-        height: 60%
+        height: 50%
+        border-radius: 5px
+        background: #00000053
+        padding-bottom: 3rem
+        padding: 2rem
 
         .text-title
             font-family: $page-title
@@ -18,11 +20,12 @@
             align-self: start
             color: $btn
 
-            .text
-                font-family: $main-text
-                font-size: 1.5rem
-                line-height: 2.5rem
+        .text
+            font-family: $main-text
+            font-size: 1.4rem
+            line-height: 2.5rem
 
-img
-    bottom: 6rem
-    position: relative
+    img
+        position: absolute
+        top: 1rem
+        right: 1rem

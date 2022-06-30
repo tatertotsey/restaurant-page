@@ -46,7 +46,7 @@ header .nav-container {
 }
 header .buy {
   position: relative;
-  top: 95px;
+  top: 2px;
   padding-right: 18rem;
 }
 
@@ -98,37 +98,69 @@ header .buy {
   bottom: 0;
 }
 
-.about {
+#about .text-container {
   color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.about .text-container {
   display: flex;
   align-items: center;
   justify-content: start;
-  margin-left: 5rem;
-  margin-top: 3rem;
-  flex-flow: column wrap;
+  margin: 5rem;
+  margin: 2rem 5rem;
+  flex-direction: column;
   width: 45%;
-  height: 60%;
+  height: 50%;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3254901961);
+  padding-bottom: 3rem;
+  padding: 2rem;
 }
-.about .text-container .text-title {
+#about .text-container .text-title {
   font-family: "Bodoni Moda", serif;
   font-size: 5rem;
   align-self: start;
   color: #F6B716;
 }
-.about .text-container .text-title .text {
+#about .text-container .text {
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.5rem;
 }
+#about img {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
 
-img {
-  bottom: 6rem;
-  position: relative;
+#menu .menu-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 5rem;
+  color: #F6B716;
+  margin: 1rem 5rem 3rem 8rem;
+}
+#menu .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-bottom: 4rem;
+  gap: 3.5rem;
+}
+#menu .wrapper .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 360px;
+  width: 400px;
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5rem;
+  background: rgba(0, 0, 0, 0.3254901961);
+  border-radius: 5px;
+  padding: 4rem;
+  border: 1px dashed #F6B716;
+}
+#menu .wrapper .menu-item p {
+  font-size: 0.8rem;
 }
 
 [data-tab-content] {
@@ -137,4 +169,66 @@ img {
 
 .active[data-tab-content] {
   display: block;
+}
+
+#contact .text-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+#contact .text-wrapper .text-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 62rem;
+  height: 450px;
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.3254901961);
+  border: 1px dashed #F6B716;
+  border-radius: 5px;
+}
+#contact .text-wrapper .text-container .text-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 5rem;
+  align-self: start;
+  color: #F6B716;
+}
+#contact .text-wrapper .text-container .text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #FFFFFF;
+  white-space: pre;
+}
+#contact .text-wrapper .hourscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 5rem;
+  flex-direction: column;
+  border: 1px dashed #F6B716;
+  width: 350px;
+  height: 450px;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3254901961);
+  border-radius: 5px;
+}
+#contact .text-wrapper .hourscontainer .hours-title {
+  align-self: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  font-family: "Bodoni Moda", serif;
+  color: #F6B716;
+}
+#contact .text-wrapper .hourscontainer .hours {
+  align-self: center;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  white-space: pre;
 }
